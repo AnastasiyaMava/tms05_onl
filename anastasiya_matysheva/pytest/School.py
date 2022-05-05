@@ -27,8 +27,8 @@ class School:
 
     def show_students_with_automat(self, average_number_for_automat: int):
         stundets_with_automat = [student for student in self.students
-                                 if sum(student.estimates) / len(student.estimates)
-                                 >= average_number_for_automat]
+                                 if sum(student.estimates) /
+                                 len(student.estimates) >= average_number_for_automat]
 
         for student in stundets_with_automat:
             return f"Student {student.surname} has automat"
